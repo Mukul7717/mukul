@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .profile-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            padding: 25px;
+            border-radius: 24px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            background-color: white;
+
+
+        }
+
+        .image {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            border-radius: 50%;
+            border: 4px solid black;
+            margin-bottom: 15px;
+        }
+
+        .profile-image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+
+        }
+
+        .profile-main .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-data .name {
+            font-size: 20px;
+            font-weight: 450;
+
+        }
+
+        .text-data {
+            margin-bottom: 20px;
+        }
+
+        .media-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .media-icons .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            height: 34px;
+            width: 34px;
+            text-decoration: none;
+            margin: 0 8px;
+            background-color: #4070f4;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        button {
+            padding: 8px 24px;
+            background-color: #000303;
+            margin: 0 10px;
+            border-radius: 24px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+
+        }
+
+
+        .profile-main .analytics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+
+        }
+
+        .analytics .data-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            border-right: 2px solid #e7e7e7;
+        }
+
+        button:hover {
+            background-color: #333535;
+            transition: all 0.3s ease;
+
+        }
+
+        .profile-main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            background-color: #000303;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="profile-main">
+        <div class="image">
+            <img src="https://yt3.googleusercontent.com/7oAF_EC8FWcjST4-hrm1-Zt0Yn4ZorGK5F0rZuNyfkX7QjYBPDIci6gDxnpPoPw9tY_S_XDssQ=s160-c-k-c0x00ffffff-no-rj"
+                alt="" class="profile-image">
+        </div>
+        <div class="text-data">
+            <span class="name"> Prefer Gamerz</span>
+            <span class="job">Youtuber & Gamer</span>
+        </div>
+
+        <div class="media-icons">
+            <a href="#" class="links" style="background-color: #4267b2"><i class='bx bxl-instagram'></i></i></a>
+            <a href="#" class="links" style="background-color: #1da1f2"> <i class='bx bxl-youtube'></i></a>
+            <a href="#" class="links" style="background-color: #e1396c"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="links" style="background-color: #ff0000"><i class='bx bxl-facebook'></i></a>
+        </div>
+        <div class="buttons">
+            <a href="https://www.youtube.com/@PrefergamerzMukul/featured"><button> Subcribe</button></a>
+            <button> Message</button>
+        </div>
+        <div class="analytics">
+            <div class="data-icons">
+                <i class='bx bx-heart' class="symbol"></i>
+                <span>60k</span>
+            </div>
+            <div class="data-icons">
+                <i class='bx bx-message-rounded-dots' class="symbol"></i>
+                <span>20k</span>
+            </div>
+            <div class="data-icons">
+                <i class='bx bx-share' class="symbol"></i>
+                <span>12k</span>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
